@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="bg-base-100 shadow-sm">
+        <div class="navbar max-w-[1200px] mx-auto">
+            <div class="navbar-start">
+                <a class="btn btn-ghost text-xl text-blue-600 font-bold p-0">SwiftCart</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="#" class="text-blue-600 font-semibold">Home</a></li>
+                    <li><a href="/products.html" class="font-semibold">Products</a></li>
+                    <li><a href="#" class="font-semibold">About</a></li>
+                    <li><a href="#" class="font-semibold">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul tabindex="-1"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a href="#" class="text-blue-600 font-semibold">Home</a></li>
+                        <li><a href="/products.html" class="font-semibold">Products</a></li>
+                        <li><a href="#" class="font-semibold">About</a></li>
+                        <li><a href="#" class="font-semibold">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+
+    <!-- our products start -->
+
+    <!-- our products end -->
+
+    <!-- footer start -->
+    <footer class="bg-slate-700 text-slate-300 p-2 lg:p-0">
+        <div class="footer sm:footer-horizontal max-w-[1200px] mx-auto py-10">
+            <nav class="max-w-[400px]">
+                <a class="btn btn-ghost text-xl text-blue-600 font-bold p-0">SwiftCart</a>
+                <p>Your one-stop shop for all your fashion and lifestyle needs. Quality products, fast delivery, and
+                    excellent
+                    support.</p>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Quick Links</h6>
+                <a class="link link-hover" href="#">Home</a>
+                <a class="link link-hover" href="/products.html">Products</a>
+                <a class="link link-hover" href="#">About</a>
+                <a class="link link-hover" href="#">Contact</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Support</h6>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Shipping</a>
+                <a class="link link-hover">Returns</a>
+                <a class="link link-hover">Privacy Policy</a>
+            </nav>
+            <form>
+                <h6 class="footer-title">Subscribe to our Newsletter</h6>
+                <p>The latest news, articles, and resources, sent to your inbox weekly</p>
+                <fieldset class="w-80">
+                    <div class="join">
+                        <input type="text" placeholder="Enter Your Email"
+                            class="input input-bordered join-item text-black" />
+                        <button class="btn btn-primary join-item">Subscribe</button>
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- product details modal start -->
+    <dialog id="my_modal_3" class="modal">
+        <div class="modal-box">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-red-600">✕</button>
+            </form>
+            <div id="modal-container"></div>
+        </div>
+    </dialog>
+    <!-- product details modal end -->
+    <!-- js -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -19,6 +19,7 @@ function displayCategories(categories) {
 }
 
 function loadProducts(category) {
+    setActive(category);
     const url = category ? `https://fakestoreapi.com/products/category/${category}` : "https://fakestoreapi.com/products";
     fetch(url)
     .then(res => res.json())
@@ -60,4 +61,12 @@ function displayProducts(products) {
         `;
         productsContainer.appendChild(productCard);
     }
+}
+
+function setActive(category = 'all') {
+    const categoriesBtns = document.querySelectorAll("#categories>.category-btn");
+    for(const categoryBtn of categoriesBtns) {
+        categoryBtn.classList.add("btn-outline");
+    }
+    document.getElementById(category)?.classList.remove('btn-outline');
 }
